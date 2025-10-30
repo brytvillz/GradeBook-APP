@@ -1,0 +1,227 @@
+html {
+  background-color: black;
+}
+* {
+  padding: 0%;
+  margin: 0%;
+  font: 1em sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("pngtree-mathematics-chalkboard-and-study-tools-for-effective-learning-picture-image_16405438.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+  animation: fadeIn 1.5s ease-in;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+header {
+  background-color: rgba(20, 21, 21, 0.92);
+  padding: 50px;
+  text-align: center;
+  transition: all 0.3s ease;
+  animation: pulse 3s infinite;
+  border-radius: 10px;
+}
+header:hover {
+  background-color: rgba(30, 31, 31, 0.95);
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+h1 {
+  color: #f6f3f3;
+  text-align: center;
+  margin: 20px 0;
+  font: 2em sans-serif;
+  font-weight: bolder;
+  transition: color 0.3s ease;
+}
+h1:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.console-section {
+  animation: gentleFloat 4s ease-in-out infinite;
+  width: 90%;
+  max-width: 1000px;
+}
+
+@keyframes gentleFloat {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+div {
+  background-color: rgba(40, 40, 40, 0.95); /* Dark background like the table */
+  margin: 20px auto;
+  max-width: 1000px; /* Wider for table layout */
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  transition: all 0.4s ease; /* Add smooth transition */
+  animation: slideUp 0.8s ease-out; /* Slide up animation */
+}
+div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  background-color: rgba(50, 50, 50, 0.97);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Style for table structure */
+.console-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Courier New", monospace; /* Monospace font like developer tools */
+}
+
+.console-table th,
+.console-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+.console-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  transform: scale(1.01);
+}
+
+.console-table th:hover,
+.console-table td:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.console-table th {
+  background-color: rgba(255, 255, 255, 0.05);
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.console-table td {
+  color: #e0e0e0;
+}
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+p:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+body {
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Mobile devices (up to 768px) */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 20px; /* Reduce from 50px */
+  }
+
+  h1 {
+    font-size: 2.5em; /* Reduce from 5em */
+    margin: 10px 0;
+  }
+
+  div {
+    margin: 10px; /* Reduce margins */
+    padding: 15px; /* Reduce from 30px */
+    max-width: 95%; /* Use percentage instead of 1000px */
+    border-radius: 5px;
+  }
+
+  .console-table {
+    font-size: 0.8em; /* Smaller table text */
+  }
+
+  .console-table th,
+  .console-table td {
+    padding: 8px; /* Reduce from 15px */
+    word-wrap: break-word; /* Prevent long text overflow */
+  }
+
+  p {
+    font-size: 1em; /* Reduce from 1.2em */
+    line-height: 1.4;
+  }
+}
+
+/* Tablet devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3.5em; /* Medium size */
+  }
+
+  header {
+    padding: 35px;
+  }
+
+  div {
+    max-width: 90%; /* Responsive width */
+    padding: 25px;
+  }
+}
+/* Desktop devices (1025px and up) */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 3.5em; /* Your original size */
+  }
+
+  header {
+    padding: 50px; /* Your original padding */
+  }
+
+  div {
+    max-width: 1000px; /* Your original max-width */
+    padding: 30px; /* Your original padding */
+  }
+}
