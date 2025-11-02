@@ -1,22 +1,22 @@
-const interns = [
+const subject = [
   {
-    name: "John Doe",
+    name: "GitHub & HTML",
     taskScores: [85, 92, 78, 88, 90],
   },
   {
-    name: "Bright Ezeribe",
+    name: " HTML forms",
     taskScores: [40, 98, 27, 89, 45],
   },
   {
-    name: "Jane Smith",
+    name: "CSS",
     taskScores: [12, 9, 37, 16, 51],
   },
   {
-    name: "Alice Johnson",
+    name: "Responsive web design",
     taskScores: [32, 45, 28, 39, 41],
   },
   {
-    name: "Bob Brown",
+    name: "Interactive Quiz App",
     taskScores: [75, 82, 68, 80, 77],
   },
 ];
@@ -32,7 +32,7 @@ function calculateAverage(taskScores) {
   return average;
 }
 
-interns.forEach(function (intern) {
-  let averageScore = calculateAverage(intern.taskScores);
-  console.log(intern.name, averageScore);
+subject.forEach(function (subject) {
+  let averageScore = calculateAverage(subject.taskScores);
+  console.log(subject.name, averageScore);
 });
