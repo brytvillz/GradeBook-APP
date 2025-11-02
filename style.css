@@ -24,11 +24,11 @@ body {
 }
 
 @keyframes fadeIn {
-  from { 
-    opacity: 0; 
+  from {
+    opacity: 0;
   }
-  to { 
-    opacity: 1; 
+  to {
+    opacity: 1;
   }
 }
 
@@ -156,45 +156,42 @@ p:hover {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-
-
 /* Mobile devices (up to 768px) */
 @media (max-width: 768px) {
-    body {
-  overflow-x: hidden;
-}
+  body {
+    overflow-x: hidden;
+  }
 
-header {
-  padding: 20px; /* Reduce from 50px */
-}
+  header {
+    padding: 20px;
+  }
 
-h1 {
-  font-size: 2.5em; /* Reduce from 5em */
-  margin: 10px 0;
-}
+  h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+  }
 
-div {
-  margin: 10px; /* Reduce margins */
-  padding: 15px; /* Reduce from 30px */
-  max-width: 95%; /* Use percentage instead of 1000px */
-  border-radius: 5px;
-}
+  div {
+    margin: 10px;
+    padding: 15px;
+    max-width: 95%;
+    border-radius: 5px;
+  }
 
-.console-table {
-  font-size: 0.8em;
-}
+  .console-table {
+    font-size: 0.8em;
+  }
 
   .console-table th,
   .console-table td {
     padding: 8px;
-    word-wrap: break-word; /* Prevent long text overflow */
+    word-wrap: break-word;
   }
-
   p {
     font-size: 1em;
     line-height: 1.4;
   }
-
+}
 
 /* Tablet devices (769px to 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
