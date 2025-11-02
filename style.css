@@ -22,6 +22,16 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+  }
+  to { 
+    opacity: 1; 
+  }
+}
+
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
@@ -75,15 +85,15 @@ h1:hover {
   }
 }
 div {
-  background-color: rgba(40, 40, 40, 0.95); /* Dark background like the table */
+  background-color: rgba(40, 40, 40, 0.95);
   margin: 20px auto;
-  max-width: 1000px; /* Wider for table layout */
+  max-width: 1000px;
   border-radius: 8px;
   padding: 30px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   color: #ffffff;
-  transition: all 0.4s ease; /* Add smooth transition */
-  animation: slideUp 0.8s ease-out; /* Slide up animation */
+  transition: all 0.4s ease;
+  animation: slideUp 0.8s ease-out;
 }
 div:hover {
   transform: translateY(-5px);
@@ -101,11 +111,11 @@ div:hover {
     transform: translateY(0);
   }
 }
-/* Style for table structure */
+
 .console-table {
   width: 100%;
   border-collapse: collapse;
-  font-family: "Courier New", monospace; /* Monospace font like developer tools */
+  font-family: "Courier New", monospace;
 }
 
 .console-table th,
@@ -145,60 +155,51 @@ p:hover {
   transform: translateX(5px);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
-body {
-  animation: fadeIn 1.5s ease-in;
-}
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
+
 /* Mobile devices (up to 768px) */
 @media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
+    body {
+  overflow-x: hidden;
+}
 
-  header {
-    padding: 20px; /* Reduce from 50px */
-  }
+header {
+  padding: 20px; /* Reduce from 50px */
+}
 
-  h1 {
-    font-size: 2.5em; /* Reduce from 5em */
-    margin: 10px 0;
-  }
+h1 {
+  font-size: 2.5em; /* Reduce from 5em */
+  margin: 10px 0;
+}
 
-  div {
-    margin: 10px; /* Reduce margins */
-    padding: 15px; /* Reduce from 30px */
-    max-width: 95%; /* Use percentage instead of 1000px */
-    border-radius: 5px;
-  }
+div {
+  margin: 10px; /* Reduce margins */
+  padding: 15px; /* Reduce from 30px */
+  max-width: 95%; /* Use percentage instead of 1000px */
+  border-radius: 5px;
+}
 
-  .console-table {
-    font-size: 0.8em; /* Smaller table text */
-  }
+.console-table {
+  font-size: 0.8em;
+}
 
   .console-table th,
   .console-table td {
-    padding: 8px; /* Reduce from 15px */
+    padding: 8px;
     word-wrap: break-word; /* Prevent long text overflow */
   }
 
   p {
-    font-size: 1em; /* Reduce from 1.2em */
+    font-size: 1em;
     line-height: 1.4;
   }
-}
+
 
 /* Tablet devices (769px to 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   h1 {
-    font-size: 3.5em; /* Medium size */
+    font-size: 3.5em;
   }
 
   header {
@@ -206,22 +207,22 @@ body {
   }
 
   div {
-    max-width: 90%; /* Responsive width */
+    max-width: 90%;
     padding: 25px;
   }
 }
 /* Desktop devices (1025px and up) */
 @media (min-width: 1025px) {
   h1 {
-    font-size: 3.5em; /* Your original size */
+    font-size: 3.5em;
   }
 
   header {
-    padding: 50px; /* Your original padding */
+    padding: 50px;
   }
 
   div {
-    max-width: 1000px; /* Your original max-width */
-    padding: 30px; /* Your original padding */
+    max-width: 1000px;
+    padding: 30px;
   }
 }
